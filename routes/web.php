@@ -12,5 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //練習 1：設定 Route 反應
+      //return view('welcome');
+      //return'welcome';
+      //return view('welcome');
+      return redirect('welcome');
+
+
 });
