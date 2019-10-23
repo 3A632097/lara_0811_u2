@@ -10,13 +10,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//練習 1：設定 Route 反應
+    Route::get('/', function () {
 
-Route::get('/', function () {
-    //練習 1：設定 Route 反應
-      //return view('welcome');
-      //return'welcome';
-      //return view('welcome');
-      return redirect('welcome');
+          //return view('welcome');
+          //return'welcome';
+          //return view('welcome');
+          return redirect('welcome');
+    });
+
+//練習 2：設定 Route 接收參數
+    Route::get('hello/{name}',function($name){
+        return'Hello,'.$name;
+    });
+
+    Route::get('hello/{name?}',function($name='Everybody'){
+        return'Hello,'.$name;
+    });
 
 
-});
