@@ -11,13 +11,14 @@
 |
 */
 //練習 1：設定 Route 反應
-    Route::get('/', function () {
+//    Route::get('/', function () {
 
           //return view('welcome');
           //return'welcome';
           //return view('welcome');
-          return redirect('welcome');
-    });
+//          return redirect('welcome');
+//    });
+
 
 //練習 2：設定 Route 接收參數
     Route::get('hello/{name}',function($name){
@@ -47,6 +48,8 @@
             return'admindashboard';
         });
     });
+//練習 7：將 Route 的內容搬至 Controller 內
+    Route::get('/',['as'=>'home.index','uses'=>'HomeController@index']);
 
 
 
