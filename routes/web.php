@@ -37,4 +37,16 @@
         return view('welcome');
     }]);
 
+//練習 5：設定 Route 前置
+    Route::get('dashboard',function(){
+        return'dashboard';
+    });
+
+    Route::group(['prefix'=>'admin'],function(){
+        Route::get('dashboard',function(){
+            return'admindashboard';
+        });
+    });
+
+
 
