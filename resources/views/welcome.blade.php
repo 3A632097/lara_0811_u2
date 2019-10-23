@@ -64,6 +64,7 @@
         </style>
     </head>
     <body>
+    <a href="{{route('hello.index')}}">Hello</a>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -92,6 +93,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+
                 </div>
             </div>
         </div>

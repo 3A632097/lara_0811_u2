@@ -28,4 +28,13 @@
         return'Hello,'.$name;
     });
 
+//練習 4：為 Route 命名
+    Route::get('hello/{name?}',['as'=>'hello.index',function($name='Everybody'){
+        return'Hello,'.$name;
+    }]);
+
+    Route::get('say/{name?}',['as'=>'hello.index',function($name='Everybody'){
+        return view('welcome');
+    }]);
+
 
